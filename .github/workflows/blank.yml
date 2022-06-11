@@ -30,7 +30,7 @@ jobs:
         run: |
           wget https://github.com/naiximcn/Build_Win11/raw/main/25136.1000_amd64_en-us_professional_5a6a993c_convert_virtual.zip
           unzip 25136.1000_amd64_en-us_professional_5a6a993c_convert_virtual.zip
-          sh start.sh
+          sh uup_download_linux.sh
           dir
       - name: Upload ISO
         uses: actions/upload-artifact@v3
