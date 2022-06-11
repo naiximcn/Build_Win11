@@ -28,9 +28,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Start Build
         run: |
-          wget https://github.com/naiximcn/Build_Win11/raw/main/25136.1000_amd64_en-us_professional_5a6a993c_convert_virtual.zip
-          unzip 25136.1000_amd64_en-us_professional_5a6a993c_convert_virtual.zip
-          sh uup_download_linux.sh
+          sudo wget https://github.com/naiximcn/Build_Win11/raw/main/25136.1000_amd64_en-us_professional_5a6a993c_convert_virtual.zip
+          sudo unzip 25136.1000_amd64_en-us_professional_5a6a993c_convert_virtual.zip
+          sudo sh uup_download_linux.sh
           dir
       - name: Upload ISO
         uses: actions/upload-artifact@v3
